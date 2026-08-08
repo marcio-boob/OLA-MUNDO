@@ -27,8 +27,5 @@ def cadastro_do_trabalhador():
                 except ValueError:
                  print('Digite uma idade valida')
                  
-                
-            
-
 cadastro_do_trabalhador()
 
