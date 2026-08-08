@@ -1,5 +1,6 @@
 #CADASTRO DE TRABALHAD
 def cadastro_do_trabalhador():
+
     while True:
         try:
             quantidades = int(input('Informe a quantidades de pessoas: '))
@@ -30,3 +31,4 @@ def cadastro_do_trabalhador():
             
 
 cadastro_do_trabalhador()
+
