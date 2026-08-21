@@ -36,13 +36,21 @@ def cadastro_do_trabalhador():
                      cadastro['ctps'] = ctps
                      cadastro['ano_contratacao'] = int(input('Ano da Contratação: '))
                      cadastro['salario'] = int(input('Valor do Salário: '))
-                     aux = idade + 35
-                     cadastro['aposentadoria'] = aux
+                     idade = (idade + 35) - (ano_atual - cadastro['ano_contratacao'])
+                     cadastro['aposentadoria'] = idade
                      lista.append(cadastro)
                      print(lista)
                      break
-                  
                 except ValueError:
                   print('Digite uma idade Valida')
-                  
-cadastro_do_trabalhador()
+    return lista
+
+def lista_cadastro():
+    aux = cadastro_do_trabalhador()
+    for z,x in enumerate(aux):
+       print("\n")
+       print(z+1,'Cadastro')
+       for valor,t in x.items():
+        print(valor,t)
+    print("Cadastro Encerrado")
+lista_cadastro()
