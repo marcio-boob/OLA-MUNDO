@@ -1,3 +1,5 @@
+#ESSE EXERCICIO ESTÁ SEM VALIDAÇÃO
+
 lista_de_numeros = []
 lista_com_erros = []
 
